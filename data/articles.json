@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "arp-spoofing-mitm-tls",
+    "title": "ARP Spoofing 與 MITM：TLS 能保護什麼、不能保護什麼",
+    "category": "security",
+    "tags": ["ARP Spoofing", "MITM", "TLS", "IoT"],
+    "date": "2026-11-01",
+    "summary": "在隔離的 Docker L2 網路重現中間人攻擊，驗證 TLS 在被劫持路徑上保護的是 payload，而非網路路徑本身。"
+  },
+  {
+    "slug": "replay-attack-hmac-nonce",
+    "title": "Replay Attack 防禦：HMAC、Nonce 與 Timestamp 的分工",
+    "category": "security",
+    "tags": ["Replay Attack", "HMAC", "Nonce", "IoT"],
+    "date": "2026-11-02",
+    "summary": "重放攻擊不需破解加密，只要重送合法請求。防禦要同時處理真實性（HMAC）與新鮮度（Nonce + Timestamp）。"
+  },
+  {
+    "slug": "sql-injection-parameterized-least-privilege",
+    "title": "SQL Injection：Parameterized Query 修根因，Least Privilege 限範圍",
+    "category": "security",
+    "tags": ["SQL Injection", "Least Privilege", "PostgreSQL"],
+    "date": "2026-11-03",
+    "summary": "參數化查詢直接處理 SQL Injection 的 root cause，最小權限只縮小損害範圍，兩者分屬不同防禦層不可互換。"
+  },
+  {
+    "slug": "windows-privilege-escalation-labs",
+    "title": "Windows 權限提升實作：未加引號服務路徑、Potato 與備份特權",
+    "category": "lab",
+    "tags": ["Privilege Escalation", "Windows", "Unquoted Service Path"],
+    "date": "2026-11-07",
+    "summary": "整理數個 Windows 本地提權 lab：自動化列舉、未加引號服務路徑劫持、Token 模擬與備份特權濫用及其對應防禦。"
+  },
+  {
+    "slug": "linux-privilege-escalation-labs",
+    "title": "Linux 權限提升實作：世界可寫設定檔與 /etc/passwd 竄改",
+    "category": "lab",
+    "tags": ["Privilege Escalation", "Linux", "File Permissions"],
+    "date": "2026-11-08",
+    "summary": "以自動化列舉找出 world-writable 的關鍵設定檔，示範竄改可寫的 /etc/passwd 寫入 UID 0 帳號直接取得 root。"
+  }
+]

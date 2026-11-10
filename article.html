@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberAI Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main>
+    <article class="article">
+      <!-- 1. 返回連結 -->
+      <div class="article__back">
+        <a class="btn" href="index.html">← 回到所有文章</a>
+      </div>
+
+      <!-- 2. 文章標頭 -->
+      <header class="article__meta" id="article-meta"></header>
+
+      <!-- 3. 內文 -->
+      <div class="article__body" id="article-body"></div>
+
+      <!-- 4. 上一篇／下一篇 -->
+      <nav class="article__nav" id="article-nav" aria-label="文章導覽"></nav>
+
+      <!-- 5. 錯誤狀態 -->
+      <div class="callout" id="error-state" hidden></div>
+    </article>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/article.js"></script>
+</body>
+</html>
